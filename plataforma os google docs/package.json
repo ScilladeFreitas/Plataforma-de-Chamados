@@ -1,0 +1,13 @@
+{
+  "name": "os-backend",
+  "version": "1.0.0",
+  "description": "API e banco de dados da plataforma de chamados e ordens de serviço",
+  "type": "module",
+  "engines": { "node": ">=22.5.0 <25" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/index.js",
+    "seed:demo": "node --disable-warning=ExperimentalWarning src/seed-demo.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js",
+    "backup": "node --disable-warning=ExperimentalWarning scripts/backup.js"
+  }
+}
